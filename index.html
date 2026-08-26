@@ -1607,11 +1607,11 @@
         if (dados && dados.link_pagamento) {
           window.location.href = dados.link_pagamento;
         } else {
-          window.location.href = "erro.html";
+          window.location.href = "erro_epi.html";
         }
       } catch (erro) {
         console.error("Erro ao criar pagamento:", erro);
-        window.location.href = "erro.html";
+        window.location.href = "erro_epi.html";
       } finally {
         botao.disabled = false;
         botao.innerHTML = textoOriginal;
